@@ -1,0 +1,21 @@
+#! /usr/bin/python2.7
+from Tkinter import *
+from SimpleCV import *
+
+root = Tk()
+def __init__(self, parent):
+   Frame.__init__(self, parent, backround = "white")
+   self.parent = parent
+   self.parent.title("Window")
+   self.pack(fill= BOTH, expand = 1)
+   self.initUI()
+def initUI(self):
+   C = camvas(root)
+   C.create_line(0, 0, 200, 100)
+   C.create_line(0, 100, 200, 0, fill="red", dash=(4, 4))
+   C.pack()
+
+def onExit(self):
+   self.quit()
+
+mainloop()
